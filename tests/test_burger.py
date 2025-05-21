@@ -68,5 +68,4 @@ class TestBurger:
         mock_ingredient2.get_type.return_value = INGREDIENT_TYPE_SAUCE
         burger.bun = mock_bun
         burger.ingredients = [mock_ingredient1, mock_ingredient2]
-        receipt_text = ('(==== Краторная булка N-200i ====)\n= filling Биокотлета из марсианской Магнолии =\n= sauce Соус Spicy-X =\n(==== Краторная булка N-200i ====)\n\nPrice: 3024')
-        assert burger.get_receipt() == receipt_text
+        assert burger.get_receipt() == TestData.receipt_text
